@@ -1,12 +1,5 @@
 /*
- * *** You can say something about your file if you need it!
- * Template Name
- * Description
- * Vertion
- * Copyright
- * Author
- * Last Modified Date
- *
+ * You can say something about your file if you need it!
  */
 /*-------------------------*/
 /* $Catalog 
@@ -14,7 +7,6 @@
 /** 
  * Catalog
  * Grid
- * Other layout
 **/
 
 /*-------------------------*/
@@ -30,21 +22,7 @@
   margin-left: auto;
   padding-left: 16px;
   padding-right: 16px;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+  max-width: 1172px;
 }
 .container-fluid {
   margin-right: auto;
@@ -709,4 +687,3 @@
 .row:after {
   clear: both;
 }
-
