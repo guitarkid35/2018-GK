@@ -1,5 +1,5 @@
 /*
- * You can say something about your file if you need it!
+ * Returning Front-End Design,First Web!
  */
 /*-------------------------*/
 /* $Catalog 
@@ -482,17 +482,17 @@ template {
 ---------------------------*/
 /* background color */
 
-.bg-color-primary{background-color: #033F63;}
-.bg-color-secondry{background-color: #FEDC97;}
+.bg-color-primary{background-color: #14213D;}
+.bg-color-secondry{background-color: #FCA311;}
 .bg-color-black{background-color: #484848;}
-.bg-color-grey{background-color: #cbcbcb;}
+.bg-color-grey{background-color: #E5E5E5;}
 .bg-color-white{background-color: #fefefe;}
 
 /* text color */
-.color-primary{color: #033F63;}
-.color-secondary{color: #FEDC97;}
+.color-primary{color: #14213D;}
+.color-secondary{color: #FCA311;}
 .color-black{color: #484848;}
-.color-grey{color: #cbcbcb;}
+.color-grey{color: #E5E5E5;}
 .color-white{color: #fefefe;}
 
 /*-------------------------*/
@@ -664,6 +664,7 @@ ul{
 .icon-instagram:before { content: '\f16d'; } /* '' */
 .icon-flickr:before { content: '\f16e'; } /* '' */
 .icon-facebook-official:before { content: '\f230'; } /* '' */
+.icon-volume-control-phone:before { content: '\f2a0'; } /* '' */
 .icon-user-circle:before { content: '\f2bd'; } /* '' */
 .icon-user-circle-o:before { content: '\f2be'; } /* '' */
 .icon-user-o:before { content: '\f2c0'; } /* '' */
@@ -677,3 +678,8 @@ ul{
 .u-push-right{float:right !important;}
 .u-pull-left{float:left !important;}
 .u-text-center{text-align: center !important;}
+.u-resize-none{resize: none !important;}
+.u-h4-bottom{margin-bottom: 0px !important;}
+.u-mg-right-10{margin-right: 10px !important;}
+
+

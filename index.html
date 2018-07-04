@@ -8,6 +8,8 @@
 	<!-- css -->
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/component.css">
 </head>
 <body>
@@ -17,7 +19,7 @@
 		<!-- End bg -->
 
 		<!-- Start header -->
-		<header class="header">
+		<header class="header js-header">
 			<div class="container">
 				<div class="navbar navbar--collapse u-clearfix">
 					<div class="social-bar navbar__social-bar">
@@ -34,7 +36,7 @@
 							<i class="icon icon-facebook-official"></i>
 						</a>
 					</div>
-					<div class="nav navbar__nav">
+					<div id="menu" class="nav navbar__nav">
 						<a href="#popup" class="menu-toggle">
 							<span></span>
 							<span></span>
@@ -43,17 +45,17 @@
 						<div id="popup" class="popup-menu">
 							<div class="container">
 								<div class="u-clearfix">
-									<a href="#" class="popup-menu__close">
+									<a href="#menu" class="popup-menu__close">
 										<span></span>
 										<span></span>
 									</a>
 								</div>
 								<ul>
-									<li><a href="#" class="popup-menu__item">ABOUT</a></li>
-									<li><a href="#" class="popup-menu__item">SKILLS</a></li>
-									<li><a href="#" class="popup-menu__item">EXPERIENCE</a></li>
-									<li><a href="#" class="popup-menu__item">WORKS</a></li>
-									<li><a href="#" class="popup-menu__item">CONTACT</a></li>
+									<li><a href="#about" id="at" class="popup-menu__item">ABOUT</a></li>
+									<li><a href="#skills" id="sk" class="popup-menu__item">SKILLS</a></li>
+									<li><a href="#experience" id="ex" class="popup-menu__item">EXPERIENCE</a></li>
+									<li><a href="#works" id="wk" class="popup-menu__item">WORKS</a></li>
+									<li><a href="#contact" id="ct" class="popup-menu__item">CONTACT</a></li>
 								</ul>
 							</div>
 						</div>
@@ -66,28 +68,32 @@
 		<!-- Star main -->
 		<section class="main">
 			<!-- Star about -->
-			<div class="hero">
+			<div id="about" class="hero">
 			<div class="hero__bg"></div>
 				<div class="container">
-					<div class="hero__content">
+					<div class="hero__content wow slideInUp">
 						<h1 class="hero__heading">LET'S BUILD SOMETHING <br> GREAT TOGETHER</h1>
+						<a id="tk" href="#contact" class="btn btn--primary btn--lg">LET'S TALK</a>
 					</div>
-					<a href="#" class="btn btn--primary btn--lg">LET'S TALK</a>
 				</div>
 			</div>
 			<!-- End about -->
 			<!-- Start Quote -->
-			<div class="quote bg-color-white">
+			<div class="quote lean-bg--top-gray lean-bg--no-margin ">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-6 col-sm-push-3">
 							<div class="quote__content">
+								<div class="Qline">
+									<div class="QlineLeft"></div>
+									<div class="QlineRight"></div>
+								</div>
 								<div class="quote__icon">
 									<i class="icon-quote-right"></i>
 								</div>
-								<p class="quote__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam officiis sapiente pariatur ullam quo odio sint quas sed nemo delectus eos asperiores dignissimos voluptatum illum eum est, eveniet, perferendis, provident.</p>
+								<p class="quote__text">Some people think design means how it looks. But of course, if you dig deeper, it’s really how it works.</p>
 								<div class="quote__name">
-									<span>Somebody</span>Somewhere
+									-- Steve Jobs
 								</div>
 							</div>
 						</div>
@@ -96,88 +102,98 @@
 			</div>
 			<!-- End Quote -->
 			<!-- Start Skill -->
-			<div class="skill bg-color-white">
+			<div id="skills" class="skill bg-color-white lean-bg--top-gray lean-bg--bottom">
 				<div class="container">
-					<h2 class="subtitle u-text-center">SKILLS</h2>
+					<h2 class="subtitle u-text-center wow pulse">SKILLS</h2>
+					<div class="lineA"></div>
+					<div class="lineB"></div>
+					<div class="lineC"></div>
 					<div class="skill-group">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="skill-card">
-									<div class="skill-card__inner bg-color-white">
-										<h4 class="skill-card__title">HTML</h4>
-										<p class="skill-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores maiores nostrum hic deserunt, ullam culpa. Eos odit voluptatum, tenetur doloremque.</p>
-									</div>
-									<div class="skill-card__icon">
-										
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="skill-card">
-									<div class="skill-card__inner bg-color-white">
-										<h4 class="skill-card__title">HTML</h4>
-										<p class="skill-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores maiores nostrum hic deserunt, ullam culpa. Eos odit voluptatum, tenetur doloremque.</p>
-									</div>
-									<div class="skill-card__icon">
-										
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="skill-card">
-									<div class="skill-card__inner bg-color-white">
-										<h4 class="skill-card__title">HTML</h4>
-										<p class="skill-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores maiores nostrum hic deserunt, ullam culpa. Eos odit voluptatum, tenetur doloremque.</p>
-									</div>
-									<div class="skill-card__icon">
-										
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="skill-card">
-									<div class="skill-card__inner bg-color-white">
-										<h4 class="skill-card__title">HTML</h4>
-										<p class="skill-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores maiores nostrum hic deserunt, ullam culpa. Eos odit voluptatum, tenetur doloremque.</p>
-									</div>
-									<div class="skill-card__icon">
-										
-									</div>
-								</div>
-							</div>
-						</div>
+						<h4 class="u-h4-bottom">Html / CSS</h4>
+						<div class="skill_line line1 wow bounceLeft"><span class="skill_num1">75%</span></div>	
+						<h4 class="u-h4-bottom">JavaScript</h4>
+						<div class="skill_line line2 wow bounceLeft"><span class="skill_num2">50%</span></div>	
+						<h4 class="u-h4-bottom">Graphic Design</h4>
+						<div class="skill_line line3 wow bounceLeft"><span class="skill_num3">75%</span></div>	
+						<h4 class="u-h4-bottom">VFX Animation</h4>
+						<div class="skill_line line4 wow bounceLeft"><span class="skill_num4">70%</span></div>
 					</div>
 				</div>
 			</div>
 			<!-- End Skills -->
 			<!-- Start experience -->
-			<div class="experience">
+			<div id="experience" class="experience">
 				<div class="container">
-					<h2 class="subtitle u-text-center color-white">EXPERIENCE</h2>
+					<h2 class="subtitle u-text-center color-white wow pulse">EXPERIENCE & EDUCATION</h2>
+					<div class="lineA line"></div>
+					<div class="lineB line"></div>
+					<div class="lineC line"></div>
 					<div class="timeline-group">
 						<div class="timeline"></div>
 						<div class="timeline-cards">
 							<div class="timeline-cards__row">
-								<div class="timeline-card">
-									<p class="timeline-card__text">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus vel expedita nobis repellat maiores itaque inventore, quia voluptatibus ipsa nam.
-									</p>
+								<div class="timeline-card wow fadeInUp">
+									<div class="timeline-card_content">
+										<div class="timeline-card__years">2016 - 2018</div>
+										<div class="timeline-card__line"></div>
+										<div class="timeline-card__logo-5"></div>
+										<h5 class="timeline-card__title">VFX Artist</h5>
+										<p class="timeline-card__text">
+											CGCG .Inc
+										</p>
+									</div>	
 								</div>
 							</div>
 							<div class="timeline-cards__row">
-								<div class="timeline-card">
-									<p class="timeline-card__text">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus vel expedita nobis repellat maiores itaque inventore, quia voluptatibus ipsa nam.
-									</p>
+								<div class="timeline-card wow fadeInUp" data-wow-delay="0.2s">
+									<div class="timeline-card_content">
+										<div class="timeline-card__years">2013 - 2015</div>
+										<div class="timeline-card__line"></div>
+										<div class="timeline-card__logo-4"></div>
+										<h5 class="timeline-card__title">Web and Graphic Designer</h5>
+										<p class="timeline-card__text">
+											GIGA-BYTE Technology Co., Ltd.
+										</p>
+									</div>	
 								</div>
 							</div>
 							<div class="timeline-cards__row">
-								<div class="timeline-card">
-									<p class="timeline-card__text">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus vel expedita nobis repellat maiores itaque inventore, quia voluptatibus ipsa nam.
-									</p>
+								<div class="timeline-card wow fadeInUp" data-wow-delay="0.4s">
+									<div class="timeline-card_content">
+										<div class="timeline-card__years">2012 - 2013</div>
+										<div class="timeline-card__line"></div>
+										<div class="timeline-card__logo-3"></div>
+										<h5 class="timeline-card__title">Graphic Designer</h5>
+										<p class="timeline-card__text">
+											Freelance
+										</p>
+									</div>	
+								</div>
+							</div>
+							<div class="timeline-cards__row">
+								<div class="timeline-card wow fadeInUp" data-wow-delay="0.6s">
+									<div class="timeline-card_content">
+										<div class="timeline-card__years">2010 - 2012</div>
+										<div class="timeline-card__line"></div>
+										<div class="timeline-card__logo-2"></div>
+										<h5 class="timeline-card__title">Design and Visual Communications</h5>
+										<p class="timeline-card__text">
+											<span>Master's degree</span><br>Tainan University of Technology
+										</p>
+									</div>	
+								</div>
+							</div>
+							<div class="timeline-cards__row">
+								<div class="timeline-card wow fadeInUp" data-wow-delay="0.8s">
+									<div class="timeline-card_content">
+										<div class="timeline-card__years">2005 - 2008</div>
+										<div class="timeline-card__line"></div>
+										<div class="timeline-card__logo-1"></div>
+										<h5 class="timeline-card__title">Management Information Systems</h5>
+										<p class="timeline-card__text">
+											<span>Bachelor's  degree</span><br>Ming Hsin University of Science and Technology
+										</p>
+									</div>	
 								</div>
 							</div>
 						</div>
@@ -186,11 +202,55 @@
 			</div>
 			<!-- End experience -->
 			<!-- Start work -->
-			<div class="work bg-color-white">
+			<div id="works" class="work bg-color-white lean-bg--top lean-bg--bottom ">
 				<div class="container">
-					<h2 class="subtitle u-text-center">MY WORKS</h2>
+					<h2 class="subtitle u-text-center wow pulse">MY WORKS</h2>
+					<div class="lineA"></div>
+					<div class="lineB"></div>
+					<div class="lineC"></div>
 					<div class="work-list">
 						<div class="work-item">
+							<div class="row">
+								<div class="col-sm-6 col-sm-push-5">
+									<div class="imgbox">
+										<a data-fancybox href="https://www.youtube.com/watch?v=5oJSLgUojyk">
+											<div class="imgbox__inner imgbox__inner--4-3">
+												<div class="image" style="background-image: url('images/hero_bg.jpg');">		
+											</div>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-sm-4 col-sm-pull-5">
+									<div class="work-item__text work-item__text--right">
+										<h3 class="work-item__title">2018 VFX DEMOREEL</h3>
+										<p class="work-item__intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, aspernatur? Mollitia, quaerat placeat deserunt amet ut facere, molestiae et molestias.</p>
+										<a href="https://www.youtube.com/watch?v=5oJSLgUojyk" class="text-btn text-btn--primary text-btn--lg" target="_blank">Show project</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+								<div class="work-item">
+							<div class="row">
+								<div class="col-sm-6 ">
+									<div class="imgbox">
+										<div class="imgbox__inner imgbox__inner--4-3">
+											<div class="image" style="background-image: url('images/hero_bg.jpg');"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="work-item__text">
+										<h3 class="work-item__title">TrollHunters VFX REEL</h3>
+										<p class="work-item__intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, aspernatur? Mollitia, quaerat placeat deserunt amet ut facere, molestiae et molestias.</p>
+										<a href="#" class="text-btn text-btn--primary text-btn--lg">Show project</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+								<div class="work-item">
 							<div class="row">
 								<div class="col-sm-6 col-sm-push-5">
 									<div class="imgbox">
@@ -201,7 +261,7 @@
 								</div>
 								<div class="col-sm-4 col-sm-pull-5">
 									<div class="work-item__text work-item__text--right">
-										<h3 class="work-item__title work-item__title--right">TrollHunters VFX REEL</h3>
+										<h3 class="work-item__title">TrollHunters VFX REEL</h3>
 										<p class="work-item__intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, aspernatur? Mollitia, quaerat placeat deserunt amet ut facere, molestiae et molestias.</p>
 										<a href="#" class="text-btn text-btn--primary text-btn--lg">Show project</a>
 									</div>
@@ -213,15 +273,40 @@
 				</div>
 			</div>
 			<!-- End work -->
-
+			<!-- Start contact -->
+			<div id="contact" class="contact">
+				<div class="container">
+					<h2>
+						<div class="subtitle u-text-center color-white wow pulse">CONTACT</div>
+					</h2>
+					<div class="lineA line"></div>
+					<div class="lineB line"></div>
+					<div class="lineC line"></div>
+					<div class="info ">
+						<p><i class="icon icon-mail u-mg-right-10 "></i>guitarkid35@gmail.com</p>
+						<p><i class="icon icon-volume-control-phone u-mg-right-10"></i>+886 933 441 005</p>
+					</div>
+				</div>
+			</div>
+			<!-- End contact -->
 		</section>
 		<!-- End main -->
 
 		<!-- Start footer -->
-		<footer>
-			
+		<footer class="footer">
+			<div class="container">
+				<p class="final-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, quidem, adipisci. Consequatur, obcaecati eligendi facere hic numquam minima temporibus et dicta qui sequi aliquam necessitatibus animi nostrum, accusantium veniam quidem.</p>
+				<p class="copyright">Copyright © 2018 GK. All Rights Reserved.</p>
+			</div>
 		</footer>
 		<!-- End footer -->
 	</div>
+	<!-- JS -->
+	<script src="js/jquery-2.0.2.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/js-easing.js"></script>
+	<script src="js/custom.js"></script>
 </body>
 </html>
