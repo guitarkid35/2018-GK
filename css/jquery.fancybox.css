@@ -224,8 +224,8 @@
 
 .fancybox-slide--iframe .fancybox-content {
   padding: 0;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   max-width: calc(100% - 100px);
   max-height: calc(100% - 88px);
   overflow: visible;

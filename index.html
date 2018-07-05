@@ -16,6 +16,8 @@
 	<div class="wrapper">
 		<!-- Start bg-->
 		<div class="bg"></div>
+		<div class="bg1" data-stellar-ratio="0.5" data-stellar-vertical-offset="150"></div>
+		<div class="bg2"></div>
 		<!-- End bg -->
 
 		<!-- Start header -->
@@ -23,16 +25,16 @@
 			<div class="container">
 				<div class="navbar navbar--collapse u-clearfix">
 					<div class="social-bar navbar__social-bar">
-						<a href="#" class="icon-btn">
+						<a href="https://www.linkedin.com/in/garrick-chou/" class="icon-btn" target="_blank">
 							<i class="icon icon-linkedin-squared"></i>
 						</a>
 						<a href="#" class="icon-btn">
 							<i class="icon icon-github-circled-alt2"></i>
 						</a>
-						<a href="#" class="icon-btn">
+						<a href="https://www.flickr.com/photos/gallerykid/" class="icon-btn" target="_blank">
 							<i class="icon icon-flickr"></i>
 						</a>
-						<a href="#" class="icon-btn">
+						<a href="https://www.facebook.com/garrick.chou" class="icon-btn" target="_blank">
 							<i class="icon icon-facebook-official"></i>
 						</a>
 					</div>
@@ -44,6 +46,8 @@
 						</a>
 						<div id="popup" class="popup-menu">
 							<div class="container">
+								<h2 class="popup-menu__name">GARRICK<br>CHOU</h2>
+								<div class="popup-menu__photo"></div>
 								<div class="u-clearfix">
 									<a href="#menu" class="popup-menu__close">
 										<span></span>
@@ -51,8 +55,8 @@
 									</a>
 								</div>
 								<ul>
-									<li><a href="#about" id="at" class="popup-menu__item">ABOUT</a></li>
-									<li><a href="#skills" id="sk" class="popup-menu__item">SKILLS</a></li>
+									<li><a href="#about" id="at" class="popup-menu__item">HOME</a></li>
+									<li><a href="#skills" id="sk" class="popup-menu__item">ABOUT</a></li>
 									<li><a href="#experience" id="ex" class="popup-menu__item">EXPERIENCE</a></li>
 									<li><a href="#works" id="wk" class="popup-menu__item">WORKS</a></li>
 									<li><a href="#contact" id="ct" class="popup-menu__item">CONTACT</a></li>
@@ -104,19 +108,30 @@
 			<!-- Start Skill -->
 			<div id="skills" class="skill bg-color-white lean-bg--top-gray lean-bg--bottom">
 				<div class="container">
-					<h2 class="subtitle u-text-center wow pulse">SKILLS</h2>
+					<h2 class="subtitle u-text-center wow pulse">ABOUT ME</h2>
 					<div class="lineA"></div>
 					<div class="lineB"></div>
 					<div class="lineC"></div>
-					<div class="skill-group">
-						<h4 class="u-h4-bottom">Html / CSS</h4>
-						<div class="skill_line line1 wow bounceLeft"><span class="skill_num1">75%</span></div>	
-						<h4 class="u-h4-bottom">JavaScript</h4>
-						<div class="skill_line line2 wow bounceLeft"><span class="skill_num2">50%</span></div>	
-						<h4 class="u-h4-bottom">Graphic Design</h4>
-						<div class="skill_line line3 wow bounceLeft"><span class="skill_num3">75%</span></div>	
-						<h4 class="u-h4-bottom">VFX Animation</h4>
-						<div class="skill_line line4 wow bounceLeft"><span class="skill_num4">70%</span></div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="skill-about">
+								<h3 class="skill_title">WHO AM <span>I</span></h3>
+								<p class="skill_title--text">I am a visual designer and specialized in 3D motion Graphic, visual effect and web design.<br><br>I am what I would like to accomplish in my career life.</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="skill-group">
+								<h3 class="skill_title">EXPERT <span>IN</span></h3>
+								<h4 class="u-h4-bottom">Html / CSS</h4>
+								<div class="skill_line line1 wow bounceLeft"><span class="skill_num1">75%</span></div>	
+								<h4 class="u-h4-bottom">JavaScript</h4>
+								<div class="skill_line line2 wow bounceLeft"><span class="skill_num2">45%</span></div>	
+								<h4 class="u-h4-bottom">Graphic Design</h4>
+								<div class="skill_line line3 wow bounceLeft"><span class="skill_num3">75%</span></div>	
+								<h4 class="u-h4-bottom">VFX Animation</h4>
+								<div class="skill_line line4 wow bounceLeft"><span class="skill_num4">70%</span></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -210,12 +225,13 @@
 					<div class="lineC"></div>
 					<div class="work-list">
 						<div class="work-item">
+							<div class=""></div>
 							<div class="row">
 								<div class="col-sm-6 col-sm-push-5">
 									<div class="imgbox">
 										<a data-fancybox href="https://www.youtube.com/watch?v=5oJSLgUojyk">
 											<div class="imgbox__inner imgbox__inner--4-3">
-												<div class="image" style="background-image: url('images/hero_bg.jpg');">		
+												<div class="image" style="background-image: url('images/vfx.png');">
 											</div>
 										</div>
 										</a>
@@ -224,49 +240,32 @@
 								<div class="col-sm-4 col-sm-pull-5">
 									<div class="work-item__text work-item__text--right">
 										<h3 class="work-item__title">2018 VFX DEMOREEL</h3>
-										<p class="work-item__intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, aspernatur? Mollitia, quaerat placeat deserunt amet ut facere, molestiae et molestias.</p>
-										<a href="https://www.youtube.com/watch?v=5oJSLgUojyk" class="text-btn text-btn--primary text-btn--lg" target="_blank">Show project</a>
+										<p class="work-item__intro">Trollhunters on Netflix.</p>
+										<div class="work-item__line"></div>
+										<a href="https://www.youtube.com/watch?v=5oJSLgUojyk" class="text-btn text-btn--primary text-btn--md" target="_blank">Show project</a>
 									</div>
 								</div>
-
 							</div>
 						</div>
-								<div class="work-item">
+						<div class="work-item u-mg-left-50">
 							<div class="row">
-								<div class="col-sm-6 ">
+								<div class="col-sm-6">
 									<div class="imgbox">
-										<div class="imgbox__inner imgbox__inner--4-3">
-											<div class="image" style="background-image: url('images/hero_bg.jpg');"></div>
-										</div>
+										<a href="https://www.gigabyte.com/MicroSite/374" target="_blank">
+											<div class="imgbox__inner imgbox__inner--4-3">
+												<div class="image" style="background-image: url('images/waterforce.png');"></div>
+											</div>
+										</a>
 									</div>
 								</div>
 								<div class="col-sm-4">
 									<div class="work-item__text">
-										<h3 class="work-item__title">TrollHunters VFX REEL</h3>
-										<p class="work-item__intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, aspernatur? Mollitia, quaerat placeat deserunt amet ut facere, molestiae et molestias.</p>
-										<a href="#" class="text-btn text-btn--primary text-btn--lg">Show project</a>
+										<h3 class="work-item__title">2014 Waterforce Website</h3>
+										<p class="work-item__intro">Web & Graphic Design.</p>
+										<div class="work-item__line"></div>
+										<a href="https://www.gigabyte.com/MicroSite/374" class="text-btn text-btn--primary text-btn--md" target="_blank">Show project</a>
 									</div>
 								</div>
-
-							</div>
-						</div>
-								<div class="work-item">
-							<div class="row">
-								<div class="col-sm-6 col-sm-push-5">
-									<div class="imgbox">
-										<div class="imgbox__inner imgbox__inner--4-3">
-											<div class="image" style="background-image: url('images/hero_bg.jpg');"></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4 col-sm-pull-5">
-									<div class="work-item__text work-item__text--right">
-										<h3 class="work-item__title">TrollHunters VFX REEL</h3>
-										<p class="work-item__intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, aspernatur? Mollitia, quaerat placeat deserunt amet ut facere, molestiae et molestias.</p>
-										<a href="#" class="text-btn text-btn--primary text-btn--lg">Show project</a>
-									</div>
-								</div>
-
 							</div>
 						</div>
 					</div>
@@ -295,9 +294,9 @@
 		<!-- Start footer -->
 		<footer class="footer">
 			<div class="container">
-				<p class="final-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, quidem, adipisci. Consequatur, obcaecati eligendi facere hic numquam minima temporibus et dicta qui sequi aliquam necessitatibus animi nostrum, accusantium veniam quidem.</p>
-				<p class="copyright">Copyright © 2018 GK. All Rights Reserved.</p>
+				<p class="final-text">The C.V page made with HTML / CSS3 / Jquery<br>Grid system made with bootstrap3.</p>
 			</div>
+			<p class="copyright">Copyright © 2018 GK. All Rights Reserved.</p>
 		</footer>
 		<!-- End footer -->
 	</div>

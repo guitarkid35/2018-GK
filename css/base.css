@@ -18,7 +18,7 @@
 /*-------------------------*/
 /* $Font import 
 ---------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Gudea:700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800');
 
 /*-------------------------*/
 /* $Reset 
@@ -501,6 +501,7 @@ template {
 /* Globel */
 body,html{
   font-family: 'Helvetica', 'roboto', arial, sans-serif;
+
 }
 /* heading */
 h1,h2,h3,h4,h5,h6{
@@ -517,7 +518,7 @@ h1{
 h2{
   font-size: 48px;
   font-weight: 600;
-  font-family: 'Helvetica', 'roboto', arial, sans-serif;
+  font-family:  'Helvetica', 'roboto', arial, sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -564,7 +565,7 @@ p{
 .subtitle{
   font-size: 48px;
   font-weight: 900;
-  font-family: 'Gudea','Helvetica', 'roboto', arial, sans-serif;
+  font-family: 'Raleway','Helvetica', 'roboto', arial, sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -681,5 +682,6 @@ ul{
 .u-resize-none{resize: none !important;}
 .u-h4-bottom{margin-bottom: 0px !important;}
 .u-mg-right-10{margin-right: 10px !important;}
+.u-mg-left-50{margin-left: 50px ;}
 
 
