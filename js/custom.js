@@ -35,11 +35,11 @@ $(document).ready(function(){
 		}
 	});
 	//WOW-plugin
-	if(window.width > 768){
+	if($(window).width() > 768){
 		new WOW().init();
 	}
 	//stellar
-	if(window.width > 768){
+	if($(window).width() > 768){
 		$(window).stellar();
 	}
 	//slide
