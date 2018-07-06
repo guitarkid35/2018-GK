@@ -10,6 +10,16 @@ $(document).ready(function(){
 			$header.removeClass("header--colorchange");
 		}
 	})
+	//skills-slider
+	$(window).on("scroll", function(){
+		var scrollDis = $(window).scrollTop();
+		if(scrollDis > 600){
+    		$(".js-skill").addClass("skill_line");
+		}
+		else{
+			$(".js-skill").removeClass("skill_line");
+		}
+	});
 	//WOW-plugin
 	if(screen.width > 768){
 		new WOW().init();
