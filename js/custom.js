@@ -11,6 +11,7 @@ $(document).ready(function(){
 	    } else {
 	        $("#Top").stop().fadeOut("fast");
 	    }
+	    return false;
 	});
 
 	//header color change
@@ -61,5 +62,5 @@ $(document).ready(function(){
 	$("#tk").click(function(){
 		$("html,body").animate({scrollTop:$("#contact").offset().top}, 900, "easeInOutCirc");
 	});
-})
+	})
 
