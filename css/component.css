@@ -1198,7 +1198,6 @@
 		font-size: 26px;
 		float:none;
 		padding:15px;
-		padding-left: 20px;
 		margin:0;
 	}
   }
@@ -1214,6 +1213,7 @@
 		float:none;
 		padding:10px;
 		margin:0;
+		padding-left: 20px;
 	}
 }
 
