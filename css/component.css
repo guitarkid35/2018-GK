@@ -1187,6 +1187,23 @@
 	border: 1px solid #FCA311;
 	padding: 10px;
 }
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2){
+  		.contact .info{
+		width: 450px;
+		position: relative;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.contact .info p{
+		font-size: 18px;
+		float:none;
+		padding:10px;
+		margin:0;
+	}
+  }
 @media (max-width: 768px){
 	.contact .info{
 		width: 450px;
@@ -1195,7 +1212,7 @@
 		margin-left: auto;
 	}
 	.contact .info p{
-		font-size: 18px;
+		font-size: 20px;
 		float:none;
 		padding:10px;
 		margin:0;
