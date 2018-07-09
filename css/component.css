@@ -804,7 +804,7 @@
 	margin:0;
 	padding-right: 15px;
 	font-size: 22px;
-	text-align: justify;
+	
 }
 @media (max-width: 768px){
 	.skill-group{
@@ -1196,9 +1196,9 @@
 	padding: 10px;
 }
 @media only screen 
-and (min-device-width: 834px) 
-and (max-device-width: 1112px) 
-and (-webkit-min-device-pixel-ratio: 2){
+and (min-width: 834px) 
+and (max-width: 1112px) 
+and (-webkit-min-pixel-ratio: 2){
 	.contact .info{
 		width: 450px;
 		position: relative;
