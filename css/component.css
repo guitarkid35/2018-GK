@@ -803,20 +803,28 @@
 .skill_title--text{
 	margin:0;
 	padding-right: 15px;
-	font-size: 18px;
-	text-align: left;
+	font-size: 22px;
+	text-align: justify;
 }
 @media (max-width: 768px){
-	.skill-group,
+	.skill-group{
+		margin-left: 10px;
+
+	}
 	.skill-about{
 		margin-left: -40px;
-		margin-right: -25px;
+		margin-right: 10px;
 	}
 	.skill-about h2,h3{
 		font-size: 34px;
 	}	
 }
 @media (max-width: 380px){
+	.skill-group,
+	.skill-about{
+		margin-left:-27%;
+		margin-right: -27%;
+	}
 	#skills h2,h3{
 		font-size: 32px;
 	}	
@@ -1159,7 +1167,7 @@
 	padding-top: 40px;
 	padding-bottom: 40px;
 
-}
+	}
 }
 /* info
 ---------------------------*/
@@ -1187,7 +1195,10 @@
 	border: 1px solid #FCA311;
 	padding: 10px;
 }
-@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2){
+@media only screen 
+and (min-device-width: 834px) 
+and (max-device-width: 1112px) 
+and (-webkit-min-device-pixel-ratio: 2){
 	.contact .info{
 		width: 450px;
 		position: relative;
@@ -1198,7 +1209,7 @@
 		font-size: 22px;
 		float:none;
 		padding:15px;
-		padding-left: 12%;
+		padding-left: 20%;
 		margin:0;
 	}
   }
@@ -1210,11 +1221,11 @@
 		margin-left: auto;
 	}
 	.contact .info p{
-		font-size: 20px;
+		font-size: 18px;
 		float:none;
 		padding:10px;
-		margin:0;
 		padding-left: 8%;
+		margin:0;
 	}
 }
 
