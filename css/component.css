@@ -805,8 +805,8 @@
 	padding-right: 15px;
 	font-size: 22px;
 	text-align: justify;
-	word-wrap: break-word;
-	word-break: break-all;
+	/*word-wrap: break-word;
+	word-break: break-all;*/
 	
 }
 @media (max-width: 768px){
