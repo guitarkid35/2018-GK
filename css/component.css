@@ -811,16 +811,19 @@
 }
 @media (max-width: 768px){
 	.skill-group{
-		margin-left: 10px;
+		margin-left: -40px;
 
 	}
 	.skill-about{
 		margin-left: -40px;
-		margin-right: 10px;
+		margin-right: -10px;
 	}
 	.skill-about h2,h3{
 		font-size: 34px;
-	}	
+	}
+	.skill_title--text{
+		padding-right: 0px;
+	}
 }
 @media (max-width: 380px){
 	.skill-group,
