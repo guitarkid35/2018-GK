@@ -312,7 +312,7 @@
 	cursor: pointer;
 	overflow: hidden;
 	user-select: none;
-	user-drag:none;
+	user-zoom: none;
 	transition: all 0.3s;
 	background-color: inherit;
 }
@@ -479,9 +479,9 @@
 }
 /* navbar
 ---------------------*/
-.navbar{
-	/*border: 1px solid #fff;*/
-}
+/* .navbar{
+	border: 1px solid #fff;
+} */
 .navbar--collapse{
 	margin-left: -16px;
 	margin-right: -16px;	
@@ -803,7 +803,7 @@
 .skill_title--text{
 	margin:0;
 	padding-right: 15px;
-	font-size: 22px;
+	font-size: 20px;
 	text-align: left;
 	/*word-wrap: break-word;
 	word-break: break-all;*/
