@@ -90,4 +90,4 @@ function update() {
 		time+=1;
 	});
 }
-setInterval(update,30);
+setInterval(update,24);

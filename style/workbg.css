@@ -54,7 +54,7 @@
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  border: 1px solid #000;
+  border: 1px dashed #000;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -67,7 +67,7 @@
   width: 900px;
   height: 900px;
   border-radius: 50%;
-  border: 1px solid #000;
+  border: 1px dashed #000;
   position: absolute;
   top: 50%;
   left: 50%;
