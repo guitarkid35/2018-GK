@@ -28,25 +28,45 @@
 		background-color: #618194
 		+circle(400px)
 		+ab_center
-		box-shadow: -40px -40px darken(#618194,10) inset
+		box-shadow: -40px -40px darken(#618194,10) inset,0 0 20px rgba(0,0,0,0.3)
 		opacity: 0.5
+		background-image: url("../images/workbg.png")
+		background-size: 150px
+		background-position: center
+		background-repeat: no-repeat
+		
+		
 
 	.ball-b
 		background-color: #000000
-		+circle(50px)
-		+ab_center
-	.ball-c
-		background-color: #000000
 		+circle(70px)
 		+ab_center
+		opacity: 0.3
+		box-shadow : 0 0 20px lighten(#faa22e,10)
+		z-index: 1000
+		background-image: url("../images/layers.png")
+		background-size: 30px
+		background-position: center
+		background-repeat: no-repeat
+	.ball-c
+		background-color: #faa22e
+		+circle(90px)
+		+ab_center
+		opacity: 0.3
+		box-shadow : 0 0 20px lighten(#faa22e,10)
+		z-index: 1000
+		background-image: url("../images/source-code.png")
+		background-size: 50px
+		background-position: center
+		background-repeat: no-repeat
 	.trace1
-		+circle(600px)
+		+circle(700px)
 		border: 1px dashed #000
 		+ab_center
-		opacity: 0.3
+		opacity: 0.1
 	.trace2
-		+circle(900px)
+		+circle(1200px)
 		border: 1px dashed #000
 		+ab_center
-		opacity: 0.3
+		opacity: 0.1
 

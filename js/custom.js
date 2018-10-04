@@ -69,15 +69,15 @@ var time = 0;
 var stars =  [
 	{
 		el: ".ball-b",
-		r: 300,
-		speed: 0.6,
-		width: 50,
+		r: 350,
+		speed: 0.2,
+		width: 70,
 	},
 	{
 		el: ".ball-c",
-		r: 450,
-		speed: 0.4,
-		width: 70,
+		r: 600,
+		speed: 0.1,
+		width: 90,
 	},
 ]
 function update() {
