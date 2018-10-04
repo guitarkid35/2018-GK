@@ -568,6 +568,7 @@ p{
   font-family: 'Raleway','Helvetica', 'roboto', arial, sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
+  z-index: 1;
 }
 @media (max-width: 768px){
   .subtitle{

@@ -64,3 +64,30 @@ $(document).ready(function(){
 	});
 	})
 
+// workbg
+var time = 0;
+var stars =  [
+	{
+		el: ".ball-b",
+		r: 300,
+		speed: 0.6,
+		width: 50,
+	},
+	{
+		el: ".ball-c",
+		r: 450,
+		speed: 0.4,
+		width: 70,
+	},
+]
+function update() {
+	stars.forEach((star)=>{
+		var r = star.r;
+		var angle = star.speed * time * 2;
+		var x = r * Math.cos((angle / 360) * (Math.PI * 2))- star.width / 2;
+		var y = r * Math.sin((angle / 360) * (Math.PI * 2))- star.width / 2;
+		$(star.el).css("transform","translate("+x+"px,"+y+"px)");
+		time+=1;
+	});
+}
+setInterval(update,30);
