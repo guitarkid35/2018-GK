@@ -91,3 +91,7 @@ function update() {
 	});
 }
 setInterval(update,24);
+
+if ($(window).width() > 768) {
+	$(window).update();
+}
