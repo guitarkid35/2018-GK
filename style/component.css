@@ -781,6 +781,9 @@
 /*-------------------------*/
 /* $Skills
 ---------------------------*/
+#skills{
+	padding-bottom: 150px;
+}
 .skill{
 	padding: 80px;
 	padding-bottom: 80px;
@@ -813,6 +816,13 @@
 }
 .skill-group span{
 	font-weight: 900;
+}
+.skill-rwd{
+	width: 100%;
+	height: 350px;
+	/* background-color: #000; */
+	display: flex;
+	margin: 0;
 }
 .skill_title--text{
 	margin:0;
