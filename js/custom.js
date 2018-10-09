@@ -95,10 +95,4 @@ setInterval(update,24);
 if ($(window).width() > 768) {
 	$(window).update();
 }
-//TweenMax-RWD
-var timeline = new TimelineMax({
 
-})
-timeline.from("#sun1",1.5,{
-	y:"-=300",
-})
