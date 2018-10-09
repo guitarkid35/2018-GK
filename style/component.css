@@ -784,9 +784,11 @@
 .RWD{
 	opacity: 0;
 	transition: 0.5s;
+	top:50px;
 }
 .RWD.show{
 	opacity: 1;
+	top:0;
 
 }
 .skill{
