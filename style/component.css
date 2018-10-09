@@ -784,7 +784,6 @@
 .RWD{
 	opacity: 0;
 	transition: 0.5s;
-	/* transform: translateY(50px); */
 }
 .RWD.show{
 	opacity: 1;
@@ -828,7 +827,7 @@
 .skill-rwd{
 	width: 100%;
 	height: 350px;
-	/* background-color: #000; */
+	top:-30px;
 	display: flex;
 	margin: 0;
 }
@@ -837,14 +836,11 @@
 	padding-right: 15px;
 	font-size: 20px;
 	text-align: left;
-	/*word-wrap: break-word;
-	word-break: break-all;*/
 	
 }
 @media (max-width: 768px){
 	.skill-rwd{
 		width: 300px;
-		/* background-color: #000; */
 		left:-60px;
 		top:-60px;
 		margin: 0;
