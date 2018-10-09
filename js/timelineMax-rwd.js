@@ -1,7 +1,7 @@
 var controller = new ScrollMagic.Controller();
 var scene = new ScrollMagic.Scene({
     triggerElement: ".RWD",
-    triggerHook: 0.6,
+    triggerHook: 0.8,
     duration: "100%"
 })
     .setClassToggle(".RWD", "show")
@@ -21,25 +21,48 @@ timeline.set("#sun1,#sun2,#sun3", {
     transformOrigin: "50% 50%",
 })
 
-timeline.from("#sun1,#sun2,#sun3",1.1,{
+timeline.staggerFrom("#sun1,#sun2,#sun3",1.1,{
     scale: 1.1,
     yoyo: true,
-    repeat: -1,
     ease: Elastic.easeOut
 })
-timeline.staggerFrom("#dt_line1,#dt_line2,#dt_line3,#ph_line1,#ph_line2,#ph_line3,#tb_line1,#tb_line2,#tb_line3",1.1,{
-    scaleX: 0
-},0.3)
 
-timeline.staggerFrom(".M_all",0.5,{
+var clipline = TweenMax.from("#dt_line1,#dt_line2,#dt_line3",0.3,{
+    scaleX: 0
+})
+var clipline1 = TweenMax.from("#ph_line1,#ph_line2,#ph_line3", 0.3, {
+    scaleX: 0
+})
+var clipline2 = TweenMax.from("#tb_line1,#tb_line2,#tb_line3", 0.3, {
+    scaleX: 0
+})
+
+timeline.add(clipline, 0.3)
+timeline.add(clipline1, 0.3)
+timeline.add(clipline2, 0.3)
+
+var clipMon = TweenMax.from("#dt_M1,#dt_M2,#dt_M3",0.1,{
     y: "+=200px",
     ease: Power4.easeOut
-},0.1)
+})
+var clipMon1 = TweenMax.from("#tb_M1,#tb_M2,#tb_M3", 0.2, {
+    y: "+=200px",
+    ease: Power4.easeOut
+})
+var clipMon2 = TweenMax.from("#ph_M1,#ph_M2,#ph_M3", 0.2, {
+    y: "+=200px",
+    ease: Power4.easeOut
+})
+
+timeline.add(clipMon,0.35)
+timeline.add(clipMon1, 0.3)
+timeline.add(clipMon2, 0.3)
 
 window.addEventListener("scroll", function () {
     let currentY = window.scrollY
-    let pageHeight = $("html").height() - 100
-    let progress = currentY / pageHeight
+    let pageHeight = $("html").height() - window.innerHeight
+    let pageOther = 0.1
+    let progress = currentY / pageHeight + pageOther
     timeline.progress(progress)
     timeline.pause()
 })
